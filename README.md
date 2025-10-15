@@ -22,6 +22,7 @@ Todo se guarda en un archivo de salida con los resultados.
   - `requests`
   - `beautifulsoup4`
   - `urllib3`
+  - `lxml`
 
 Instalación rápida de dependencias:
 
