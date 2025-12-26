@@ -65,6 +65,24 @@ lxml
 ```
 pip install -r requirements.txt
 ```
+
+▶️ Uso
+
+Coloca el archivo CSV en la misma carpeta del script.
+
+Ejecuta:
+
+```
+python consulta_cfdi.py
+```
+
+Ingresa el nombre del archivo CSV cuando se solicite.
+Revisa el archivo generado:
+
+```
+resultado_<archivo>.csv
+```
+
 Concurrencia
 
 El script utiliza múltiples hilos para acelerar las consultas al SAT:
@@ -90,3 +108,8 @@ Este proyecto está licenciado bajo la Licencia MIT.
 
 Este proyecto no es oficial y no tiene afiliación con el SAT.
 Úsalo bajo tu propia responsabilidad y conforme a la normatividad vigente.
+
+
+
+
+
