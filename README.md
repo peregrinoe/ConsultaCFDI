@@ -24,7 +24,7 @@ Los resultados se guardan automáticamente en un **archivo CSV de salida**.
 1. El usuario ingresa el nombre del archivo CSV a revisar.
 2. El script envía consultas paralelas al SAT usando múltiples hilos.
 3. Se procesa la respuesta XML del servicio SOAP.
-4. Se genera un archivo:
+4. Se genera un archivo `resultado_<archivo>.csv` con los resultados.
 
 ---
 
@@ -83,7 +83,7 @@ Revisa el archivo generado:
 resultado_<archivo>.csv
 ```
 
-## Concurrencia
+## 🧵 Concurrencia
 
 El script utiliza múltiples hilos para acelerar las consultas al SAT:
 
@@ -100,11 +100,11 @@ Puedes ajustar este valor según tus pruebas y conexión a internet.
 - Esta herramienta es solo de consulta; no modifica ni cancela CFDIs.
 
 --- 
-📄 Licencia
+## 📄 Licencia
 
 Este proyecto está licenciado bajo la Licencia MIT.
 
-📌 Disclaimer
+## 📌 Disclaimer
 
 Este proyecto no es oficial y no tiene afiliación con el SAT.
 Úsalo bajo tu propia responsabilidad y conforme a la normatividad vigente.
