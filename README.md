@@ -50,15 +50,15 @@ col1,col2,col3,folio_fiscal,rfc_emisor,total,rfc_receptor
 x,x,x,550E8400-E29B-41D4-A716-446655440000,AAA010101AAA,1234.56,BBC020202BBB
 ```
 
-⚙️ Requisitos
+## ⚙️ Requisitos
 
 Python 3.6 o superior
 
 Paquetes:
-requests
-beautifulsoup4
-urllib3
-lxml
+- requests
+- beautifulsoup4
+- urllib3
+- lxml
 
 📦 Instalación de dependencias
 
@@ -66,7 +66,7 @@ lxml
 pip install -r requirements.txt
 ```
 
-▶️ Uso
+## ▶️ Uso
 
 Coloca el archivo CSV en la misma carpeta del script.
 
@@ -83,7 +83,7 @@ Revisa el archivo generado:
 resultado_<archivo>.csv
 ```
 
-Concurrencia
+## Concurrencia
 
 El script utiliza múltiples hilos para acelerar las consultas al SAT:
 
@@ -92,14 +92,14 @@ NUM_THREADS = 10
 ```
 Puedes ajustar este valor según tus pruebas y conexión a internet.
 
-⚠️ Notas importantes
+## ⚠️ Notas importantes
 
-El valor fe utilizado en la consulta es fijo, ya que el SAT no lo valida estrictamente en este servicio.
-El script implementa reintentos automáticos ante errores temporales (HTTP 429, errores 5xx).
-El uso intensivo puede provocar bloqueos temporales del servicio del SAT.
-Esta herramienta es solo de consulta, no modifica ni cancela CFDIs.
+- El valor `fe` utilizado en la consulta es fijo, ya que el SAT no lo valida estrictamente.
+- El script implementa reintentos automáticos ante errores temporales (HTTP 429, errores 5xx).
+- El uso intensivo puede provocar bloqueos temporales del servicio del SAT.
+- Esta herramienta es solo de consulta; no modifica ni cancela CFDIs.
 
-
+--- 
 📄 Licencia
 
 Este proyecto está licenciado bajo la Licencia MIT.
